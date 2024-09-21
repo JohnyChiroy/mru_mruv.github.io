@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mruv-vf2</title>
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <header id="banner">
+        <h1><img class="img-banner" src="image/librodefisica.png" alt="librofisica"> MRUV - Velocidad Final² <img
+                class="img-banner" src="image/friccion.png" alt="libro"></h1>
+    </header>
+
+    <!-- Contenedor principal para el contenido y la barra lateral -->
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside id="barra">
+            <nav>
+                <ul>
+                    <a href=""><img class="img-barra" src="image/logo.png" alt="Farmacia Logo"><br><br></a>
+                    <!-- <li><a href="index.html#Temario">Temario</a></li> -->
+                    <li><a href="#Intro-vf²">Introducción</a></li>
+                    <li><a href="#Calculadora-vf²">Calculadora</a></li>
+                    <li><a href="index.html#Temario">Ir Temario</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div id="cuadro-texto">
+            <!-- Sección de MRUV -->
+            <section id="Intro-vf²">
+                <img src="image/velocidadf2.gif" class="img-t">
+                <p class="p-texto">
+                    Esta fórmula relaciona la velocidad final con la velocidad inicial, la aceleración y el
+                    desplazamiento del objeto. Es útil cuando el tiempo no es conocido, ya que conecta directamente el
+                    cambio de velocidad con el cambio de posición.
+                </p>
+
+                <h2><img class="img-section" src="image/formula.gif" alt=""> Fórmula: vf² = vi² + 1 * a * (x - xi)</h2>
+                <p class="p-texto">
+                    <!-- <strong>vf² = vi² + 1 * a * (x - xi)</strong><br> -->
+
+                    <strong>vf</strong> Velocidad Final. <br>
+                    <strong>vi</strong> Velocidad Inicial. <br>
+                    <strong>a</strong> Aceleración|. <br>
+                    <strong>x</strong> Posición Final. <br>
+                    <strong>xi</strong> Posición Inicial. <br>
+                </p>
+            </section>
+            <!-- Calculadora -->
+            <section id="Calculadora-vf²">
+                <div class="calc">
+                    <div class="calculadora">
+                        <h2>Velocidad Final Cuadrado(vf²)</h2>
+                        <form id="vf2-form">
+                            <label for="vi3">Velocidad inicial (vi):</label>
+                            <input type="number" id="vi3" step="any" required>
+                            <label for="a3">Aceleración (a):</label>
+                            <input type="number" id="a3" step="any" required>
+                            <label for="xi3">Posición inicial (xi):</label>
+                            <input type="number" id="xi3" step="any" required>
+                            <label for="x3">Posición final (x):</label>
+                            <input type="number" id="x3" step="any" required>
+                            <button type="button" value="Calcular v_f^2"
+                                onclick="calcularVelocidadFinalCuadrado()">Calcular vf²</button>
+                        </form>
+                    </div>
+                    <p class="resultado" id="vf2-resultado"></p>
+                </div>
+            </section>
+            <!-- Pie de página -->
+            <footer id="footer">
+                <p>&copy; Todos los derechos reservados</p>
+            </footer>
+            <script src="js/mruv.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mruv-x</title>
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <header id="banner">
+        <h1><img class="img-banner" src="image/librodefisica.png" alt="librofisica"> MRUV - Posición Final <img
+                class="img-banner" src="image/friccion.png" alt="libro"></h1>
+    </header>
+
+    <!-- Contenedor principal para el contenido y la barra lateral -->
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside id="barra">
+            <nav>
+                <ul>
+                    <a href=""><img class="img-barra" src="image/logo.png" alt="Farmacia Logo"><br><br></a>
+                    <!-- <li><a href="index.html#Temario">Temario</a></li> -->
+                    <li><a href="#Intro-x">Introducción</a></li>
+                    <li><a href="#Calculadora-x">Calculadora</a></li>
+                    <li><a href="index.html#Temario">Ir Temario</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div id="cuadro-texto">
+            <!-- Sección de MRUV -->
+            <section id="Intro-x">
+                <img src="image/posición.gif" class="img-t">
+                <p class="p-texto">
+                    Esta fórmula determina la posición final de un objeto en movimiento rectilíneo uniformemente
+                    variado, tomando en cuenta su posición inicial, velocidad inicial, aceleración constante y el tiempo
+                    transcurrido. Combina los efectos del desplazamiento debido a la velocidad inicial y el
+                    desplazamiento adicional causado por la aceleración.
+                </p>
+
+                <h2><img class="img-section" src="image/formula.gif" alt=""> Fórmula: x = xi + vi * t + 1/2 *
+                    a * t²</h2>
+                <p class="p-texto">
+                    <!-- <strong>x = xi + vi * t + 1/2 * a * t²</strong><br> -->
+
+                    <strong>x</strong> Posición Final. <br>
+                    <strong>xi</strong> Posición Inicial. <br>
+                    <strong>vi</strong> Velocidad Inicial. <br>
+                    <strong>a</strong> Aceleración|. <br>
+                    <strong>t</strong> Tiempo. <br>
+                </p>
+            </section>
+            <!-- Calculadora -->
+            <section id="Calculadora-x">
+                <div class="calc">
+                    <div class="calculadora">
+                        <h2>Posición Final (x)</h2>
+                        <form id="x-form">
+                            <label for="xi2">Posición inicial (xi):</label>
+                            <input type="number" id="xi2" step="any" required>
+                            <label for="vi2">Velocidad inicial (vi):</label>
+                            <input type="number" id="vi2" step="any" required>
+                            <label for="a2">Aceleración (a):</label>
+                            <input type="number" id="a2" step="any" required>
+                            <label for="t2">Tiempo (t):</label>
+                            <input type="number" id="t2" step="any" required>
+                            <button type="button" value="Calcular x" onclick="calcularPosicion()">Calcular x</button>
+                        </form>
+                    </div>
+                    <p class="resultado" id="x-resultado"></p>
+                </div>
+            </section>
+            <!-- Pie de página -->
+            <footer id="footer">
+                <p>&copy; Todos los derechos reservados</p>
+            </footer>
+            <script src="js/mruv.js"></script>
+</body>
+
+</html>

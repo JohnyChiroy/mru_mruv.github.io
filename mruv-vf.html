@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mruv-vf</title>
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <header id="banner">
+        <h1><img class="img-banner" src="image/librodefisica.png" alt="librofisica"> MRUV - Velocidad Final <img
+                class="img-banner" src="image/friccion.png" alt="libro"></h1>
+    </header>
+
+    <!-- Contenedor principal para el contenido y la barra lateral -->
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside id="barra">
+            <nav>
+                <ul>
+                    <a href=""><img class="img-barra" src="image/logo.png" alt="Farmacia Logo"><br><br></a>
+                    <!-- <li><a href="index.html#Temario">Temario</a></li> -->
+                    <li><a href="#Intro-vf">Introducción</a></li>
+                    <li><a href="#Calculadora-vf">Calculadora</a></li>
+                    <li><a href="index.html#Temario">Ir Temario</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div id="cuadro-texto">
+            <!-- Sección de MRUV -->
+            <section id="Intro-vf">
+                <img src="image/velocidadf.gif" class="img-t">
+                <p class="p-texto">
+                    Esta fórmula calcula la velocidad de un objeto después de un cierto tiempo, sabiendo su velocidad
+                    inicial y la aceleración constante a la que está sometido. Refleja cómo la velocidad cambia a lo
+                    largo del tiempo debido a la aceleración.
+                </p>
+
+                <h2><img class="img-section" src="image/formula.gif" alt=""> Fórmula: vf = vi + a * t</h2>
+                <p class="p-texto">
+                    <!-- <strong> vf = vi + a * t </strong><br> -->
+
+                    <strong>vf</strong> Velocidad Final. <br>
+                    <strong>vi</strong> Velocidad Inicial. <br>
+                    <strong>a</strong> Aceleración. <br>
+                    <strong>t</strong> Tiempo. <br>
+                </p>
+            </section>
+            <!-- Calculadora -->
+            <section id="Calculadora-vf">
+                <div class="calc">
+                    <div class="calculadora">
+                        <h2>Velocidad Final (vf)</h2>
+                        <form id="vf-form">
+                            <label for="vi1">Velocidad inicial (vi):</label>
+                            <input type="number" id="vi1" step="any" required>
+                            <label for="a1">Aceleración (a):</label>
+                            <input type="number" id="a1" step="any" required>
+                            <label for="t1">Tiempo (t):</label>
+                            <input type="number" id="t1" step="any" required>
+                            <button type="button" value="Calcular v_f" onclick="calcularVelocidadFinal()">Calcular
+                                vf</button>
+                        </form>
+                    </div>
+                    <p class="resultado" id="vf-resultado"></p>
+                </div>
+            </section>
+            <!-- Pie de página -->
+            <footer id="footer">
+                <p>&copy; Todos los derechos reservados</p>
+            </footer>
+            <script src="js/mruv.js"></script>
+</body>
+
+</html>

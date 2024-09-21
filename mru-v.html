@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mru-v</title>
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <header id="banner">
+        <h1><img class="img-banner" src="image/librodefisica.png" alt="librofisica"> MRU - Velocidad <img
+                class="img-banner" src="image/friccion.png" alt="libro"></h1>
+    </header>
+
+    <!-- Contenedor principal para el contenido y la barra lateral -->
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside id="barra">
+            <nav>
+                <ul>
+                    <a href=""><img class="img-barra" src="image/logo.png" alt="Farmacia Logo"><br><br></a>
+                    <!-- <li><a href="index.html#Temario">Temario</a></li> -->
+                    <li><a href="#Intro-v">Introducción</a></li>
+                    <li><a href="#Calculadora-v">Calculadora</a></li>
+                    <li><a href="index.html#Temario">Ir Temario</a></li>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div id="cuadro-texto">
+            <!-- Sección de MRU -->
+            <section id="Intro-v">
+                <img src="image/velocimetro.gif" class="img-t">
+                <p class="p-texto">
+                    Esta fórmula calcula la velocidad como la razón entre la distancia recorrida y el tiempo empleado en
+                    recorrerla. En un MRU, la velocidad es constante, lo que significa que el objeto se mueve a una
+                    velocidad fija durante todo el trayecto.
+                </p>
+                <h2><img class="img-section" src="image/formula.gif" alt=""> Fórmula: v = d / t</h2>
+                <p class="p-texto">
+                    <!-- <strong>v = d / t</strong><br> -->
+
+                    <strong>v</strong> es la velocidad constante. <br>
+                    <strong>d</strong> es la distancia recorrida. <br>
+                    <strong>t</strong> es el tiempo de desplazamiento. <br>
+                </p>
+            </section>
+
+            <section id="Calculadora-v">
+                <!--Formulario MRU -->
+                <div class="calc">
+                    <!-- Calculadora de Velocidad -->
+                    <form class="calculadora">
+                        <h2>Calcular Velocidad (v)</h2>
+                        <label for="Distancia1">Distancia (d):</label>
+                        <input type="number" id="Distancia1" placeholder="Introduce la distancia en metros">
+
+                        <label for="Tiempo1">Tiempo (t):</label>
+                        <input type="number" id="Tiempo1" placeholder="Introduce el tiempo en segundos">
+
+                        <button type="button" onclick="calcularVelocidad()">Calcular Velocidad</button>
+                    </form>
+                    <div class="resultado" id="VelocidadResultante"></div>
+                </div>
+            </section>
+            <!-- Pie de página -->
+            <footer id="footer">
+                <p>&copy; Todos los derechos reservados</p>
+            </footer>
+            <script src="js/mru.js"></script>
+</body>
+
+</html>

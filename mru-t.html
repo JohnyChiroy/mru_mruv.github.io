@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mru-t</title>
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <header id="banner">
+        <h1><img class="img-banner" src="image/librodefisica.png" alt="librofisica"> MRU - Tiempo <img
+                class="img-banner" src="image/friccion.png" alt="libro"></h1>
+    </header>
+
+    <!-- Contenedor principal para el contenido y la barra lateral -->
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside id="barra">
+            <nav>
+                <ul>
+                    <a href=""><img class="img-barra" src="image/logo.png" alt="Farmacia Logo"><br><br></a>
+                    <!-- <li><a href="index.html#Temario">Temario</a></li> -->
+                    <li><a href="#Intro-t">Introducción</a></li>
+                    <li><a href="#Calculadora-t">Calculadora</a></li>
+                    <li><a href="index.html#Temario">Ir Temario</a></li>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div id="cuadro-texto">
+            <!-- Sección de MRU -->
+            <section id="Intro-t">
+                <img src="image/tiempo.gif" class="img-t">
+                <p class="p-texto">
+                    Esta fórmula calcula el tiempo que un objeto tarda en recorrer una distancia dada a una velocidad
+                    constante. Es útil para determinar cuánto tiempo tomará llegar a un destino si se conoce la
+                    velocidad de desplazamiento.
+                </p>
+
+                <h2><img class="img-section" src="image/formula.gif" alt=""> Fórmula: t = d / v</h2>
+                <p class="p-texto">
+                    <!-- <strong>t = d / v</strong><br> -->
+
+                    <strong>t</strong> es el tiempo de desplazamiento. <br>
+                    <strong>d</strong> es la distancia recorrida. <br>
+                    <strong>v</strong> es la velocidad constante. <br>
+                </p>
+            </section>
+
+            <section id="Calculadora-t">
+                <!--Formulario MRU -->
+                <div class="calc">
+                    <!-- Calculadora de Tiempo -->
+                    <form class="calculadora">
+                        <h2>Calcular Tiempo (t)</h2>
+                        <label for="Distancia3">Distancia (d):</label>
+                        <input type="number" id="Distancia3" placeholder="Introduce la distancia en metros">
+
+                        <label for="Velocidad3">Velocidad (v):</label>
+                        <input type="number" id="Velocidad3" placeholder="Introduce la velocidad en metros por segundo">
+
+                        <button type="button" onclick="calcularTiempo()">Calcular Tiempo</button>
+                    </form>
+                    <div class="resultado" id="TiempoResultante"></div>
+                </div>
+            </section>
+            <!-- Pie de página -->
+            <footer id="footer">
+                <p>&copy; Todos los derechos reservados</p>
+            </footer>
+            <script src="js/mru.js"></script>
+</body>
+
+</html>
